@@ -1,0 +1,50 @@
+.portfolio-filter {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.filter {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  //   margin-left: auto;
+  //   margin-right: auto;
+  margin-bottom: 40px;
+  justify-content: left;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+  &_item {
+    width: 100%;
+  }
+}
+
+// .filter__item:not(:nth-child(5n)) {
+//   margin-right: 8px;
+// }
+.filter__btn {
+  display: inline-block;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  min-width: 73px;
+  padding: 6px 22px;
+  border-radius: 4px;
+  text-align: center;
+  color: var(--main-title-color);
+  background-color: #f5f4fa;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--local-color);
+    background-color: var(--second-header-color);
+    border-radius: 2px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+      0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  }
+}
