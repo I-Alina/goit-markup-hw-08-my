@@ -19,55 +19,55 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="container header__container">
-        <a href="/" class="logo header__logo"
-          >Web<span class="logo__span--color-black">Studio</span></a
-        >
-        <nav class="nav">
-          <ul class="nav__list list">
-            <li class="nav__item">
-              <a class="nav__link nav__link--current" href="./index.html"
-                >Студія</a
-              >
+    <main>
+      <!-- <header class="header">
+        <div class="container header__container">
+          <a href="/" class="logo header__logo"
+            >Web<span class="logo__span--color-black">Studio</span></a
+          >
+          <nav class="nav">
+            <ul class="nav__list list">
+              <li class="nav__item">
+                <a class="nav__link nav__link--current" href="./index.html"
+                  >Студія</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="contacts header__contacts list">
+            <li class="contacts__item">
+              <a class="contacts__link link" href="mailto:info@devstudio.com">
+                <svg class="contacts__envelop-icon">
+                  <use
+                    href="./images/icons.svg#icon-envelope-imail"
+                    width="16"
+                    height="12"
+                  ></use>
+                </svg>
+                info@devstudio.com
+              </a>
             </li>
-            <li class="nav__item">
-              <a class="nav__link" href="./portfolio.html">Портфоліо</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="">Контакти</a>
+            <li class="contacts__item">
+              <a class="contacts__link link" href="tel:+380961111111">
+                <svg class="contacts__tel-icon">
+                  <use
+                    href="./images/icons.svg#icon-tel"
+                    width="10"
+                    height="16"
+                  ></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
             </li>
           </ul>
-        </nav>
-        <ul class="contacts header__contacts list">
-          <li class="contacts__item">
-            <a class="contacts__link link" href="mailto:info@devstudio.com">
-              <svg class="contacts__envelop-icon">
-                <use
-                  href="./images/icons.svg#icon-envelope-imail"
-                  width="16"
-                  height="12"
-                ></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="contacts__item">
-            <a class="contacts__link link" href="tel:+380961111111">
-              <svg class="contacts__tel-icon">
-                <use
-                  href="./images/icons.svg#icon-tel"
-                  width="10"
-                  height="16"
-                ></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
-      </div>
-    </header>
-    <main>
+        </div>
+      </header> -->
       <!-- <section class="hero hero__overlay">
           <div class="container">
           <h1 class="hero__title">
@@ -455,10 +455,12 @@
         </div>
       </section> -->
     </main>
-    <!-- <footer class="footer footer--dark">
+    <footer class="footer footer--dark">
       <div class="container footer__all">
-        <section class="footer__info">
-          <a href="/" class="logo footer__logo">Web<span class="logo__span--color-white">Studio</span></a>
+        <div class="footer__info">
+          <a href="/" class="logo footer__logo"
+            >Web<span class="logo__span--color-white">Studio</span></a
+          >
           <address class="address footer__addres">
             м. Київ, пр-т Лесі Українки, 26
           </address>
@@ -474,8 +476,8 @@
               >
             </li>
           </ul>
-        </section>
-        <section class="join footer__join">
+        </div>
+        <div class="join footer__join">
           <h4 class="join__title">приєднуйтесь</h4>
           <ul class="join__list list">
             <li class="join__item">
@@ -523,20 +525,26 @@
               </a>
             </li>
           </ul>
-        </section>
-        <section class="mailing">
-            <p class="mailing__title">Підпишіться на розсилку</p>
-            <form class="mailing__form">
-                <input type="email" name="email" placeholder="E-mail" class="mailing__input">
-                <button type="submit" class="btn mailing-btn">Підписатися
-                    <svg class="mailing__icon" width="24" height="24">
-                        <use href="./images/icons.svg#footer-send-icon"></use>
-                    </svg>
-                </button>
-            </form>
-        </section>
+        </div>
+        <div class="mailing">
+          <p class="mailing__title">Підпишіться на розсилку</p>
+          <form class="mailing__form">
+            <input
+              type="email"
+              name="email"
+              placeholder="E-mail"
+              class="mailing__input"
+            />
+            <button type="submit" class="btn mailing-btn">
+              Підписатися
+              <svg class="mailing__icon" width="24" height="24">
+                <use href="./images/icons.svg#footer-send-icon"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>

@@ -1,0 +1,32 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  //   &__all {
+  //     // display: flex;
+  //     // flex-wrap: wrap;
+  //     // justify-content: center;
+  //     // align-items: baseline;
+  //   }
+  &__info {
+    // flex-grow: 1;
+    width: 100%;
+    text-align: center;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: center;
+  }
+  &__logo {
+    margin-bottom: 20px;
+  }
+  &__addres {
+    // margin-bottom: 9px;
+    margin-bottom: 8px;
+  }
+  //   &__join {
+  //     // margin-right: 100px;
+  //   }
+}
+.footer--dark {
+  background: #2f303a;
+}
