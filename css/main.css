@@ -336,6 +336,12 @@ button {
 .header__logo {
   align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .header__logo {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+}
 @media screen and (min-width: 768px) {
   .header__logo {
     margin-right: 88px;
@@ -422,10 +428,19 @@ button {
   .contacts {
     display: block;
   }
+  .contacts__item + .contacts__item {
+    margin-top: 10px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .contacts {
     display: flex;
+  }
+  .contacts__item + .contacts__item {
+    margin-top: 0px;
+  }
+  .contacts__item + .contacts__item {
+    margin-left: 30px;
   }
 }
 .contacts__envelop-icon {
@@ -443,16 +458,6 @@ button {
 
 .header__contacts {
   margin-left: auto;
-}
-@media screen and (min-width: 768px) {
-  .header__contacts .contacts__item + .contacts__item {
-    margin-top: 10px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .header__contacts .contacts__item + .contacts__item {
-    margin-left: 30px;
-  }
 }
 
 .contacts__link {
