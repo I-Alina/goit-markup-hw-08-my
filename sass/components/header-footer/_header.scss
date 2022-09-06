@@ -6,9 +6,11 @@
     display: flex;
     align-items: center;
   }
+
   .container {
     display: flex;
   }
+
   &__logo {
     @media screen and (max-width: 767px) {
       margin-top: 16px;
@@ -23,21 +25,40 @@
     align-items: center;
   }
 }
-@media screen and (max-width: 767px) {
-  .mob-open {
-    margin-left: auto;
-  }
+.mob-open {
+  margin-left: auto;
 }
-
 .mob-menu {
-  position: absolute;
+  position: fixed;
+  z-index: 2;
+  //   display: flex;
+  //   flex-wrap: wrap;
+  justify-content: center;
   width: 100vw;
   height: 100vh;
   background-color: var(--local-color);
-  top: 0%;
+  top: 0;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  &__list {
+    display: flex;
+    flex-direction: column;
+    // flex-wrap: wrap;
+    // justify-content: center;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+  }
+}
+.mob-contacts {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
 }
 .menu-close-btn {
-  display: flex;
+  display: block;
   position: absolute;
   padding: auto;
   width: 40px;
