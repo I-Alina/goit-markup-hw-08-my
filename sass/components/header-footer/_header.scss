@@ -77,8 +77,21 @@
 }
 .mob-soc {
   display: flex;
+  &__item {
+  }
+  &__item:not(:last-child) {
+    padding-right: 10px;
+  }
+  &__item:not(:first-child) {
+    padding-left: 10px;
+  }
+  &__item + &__item {
+    border-left: 1px solid var(--header-color);
+  }
 }
 .mob-soc__link {
+  // display: flex;
+  // text-align: center;
   font-weight: 500;
   font-size: 18px;
   line-height: calc(22 / 18);

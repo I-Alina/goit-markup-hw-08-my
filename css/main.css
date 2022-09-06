@@ -408,6 +408,15 @@ html {
 .mob-soc {
   display: flex;
 }
+.mob-soc__item:not(:last-child) {
+  padding-right: 10px;
+}
+.mob-soc__item:not(:first-child) {
+  padding-left: 10px;
+}
+.mob-soc__item + .mob-soc__item {
+  border-left: 1px solid var(--header-color);
+}
 
 .mob-soc__link {
   font-weight: 500;
