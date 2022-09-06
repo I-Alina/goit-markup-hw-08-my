@@ -40,15 +40,25 @@
   top: 0;
   padding-top: 48px;
   padding-bottom: 48px;
-  &__list {
+  .container {
     display: flex;
     flex-direction: column;
-    // flex-wrap: wrap;
-    // justify-content: center;
+    height: 100%;
+    // justify-content: space-between;
+    overflow: auto;
+  }
+  // //   &__list {
+  // //     display: flex;
+  // //     flex-direction: column;
+  //     // flex-wrap: wrap;
+  //     // justify-content: center;
+  //   }
+  &__link {
     font-weight: 500;
     font-size: 40px;
     line-height: 1.18;
     letter-spacing: 0.02em;
+    color: var(--main-title-color);
   }
 }
 .mob-contacts {
@@ -61,10 +71,11 @@
   display: block;
   position: absolute;
   padding: auto;
+
   width: 40px;
   height: 40px;
-  align-items: center;
-  justify-content: center;
+  //   align-items: center;
+  //   justify-content: center;
   right: 15px;
   top: 10px;
   background-color: transparent;

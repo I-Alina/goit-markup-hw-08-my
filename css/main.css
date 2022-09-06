@@ -369,13 +369,18 @@ html {
   padding-top: 48px;
   padding-bottom: 48px;
 }
-.mob-menu__list {
+.mob-menu .container {
   display: flex;
   flex-direction: column;
+  height: 100%;
+  overflow: auto;
+}
+.mob-menu__link {
   font-weight: 500;
   font-size: 40px;
   line-height: 1.18;
   letter-spacing: 0.02em;
+  color: var(--main-title-color);
 }
 
 .mob-contacts {
@@ -391,8 +396,6 @@ html {
   padding: auto;
   width: 40px;
   height: 40px;
-  align-items: center;
-  justify-content: center;
   right: 15px;
   top: 10px;
   background-color: transparent;
