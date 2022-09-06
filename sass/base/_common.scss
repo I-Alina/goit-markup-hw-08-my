@@ -23,7 +23,6 @@ h4 {
   padding-left: 0;
 }
 .container {
-  // width: 1200px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -67,4 +66,7 @@ ul {
 }
 button {
   border: 1px solid transparent;
+}
+.no-scroll {
+  overflow: hidden;
 }
