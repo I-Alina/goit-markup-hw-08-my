@@ -898,38 +898,36 @@ html {
   padding-bottom: 60px;
   background-color: #ffffff;
 }
-.clients .clients__title {
+.clients__title {
   font-weight: 700;
   font-size: 28px;
   line-height: 1.18;
   text-align: center;
   margin-bottom: 50px;
 }
-.clients .clients__list {
+.clients__list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
 }
 @media screen and (min-width: 480px) {
-  .clients .clients__list {
+  .clients__list {
     max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
-  .clients .clients__list {
+  .clients__list {
     max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .clients .clients__list {
+  .clients__list {
     max-width: 1200px;
   }
 }
-
 .clients__item {
   display: flex;
-  width: 170px;
   width: 100%;
   height: 92px;
 }
@@ -948,10 +946,6 @@ html {
     max-width: 170px;
   }
 }
-.clients__item:last-child {
-  margin-right: 0px;
-}
-
 .clients__link {
   display: flex;
   width: 100%;
@@ -968,7 +962,6 @@ html {
   border-color: var(--second-header-color);
   fill: var(--second-header-color);
 }
-
 .clients__icon {
   display: flex;
   width: 106px;
@@ -982,6 +975,11 @@ html {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.footer__all {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .footer__info {
   width: 100%;
   text-align: center;
@@ -991,6 +989,14 @@ html {
 }
 .footer__addres {
   margin-bottom: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .info-join {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .footer--dark {
@@ -1033,6 +1039,7 @@ html {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
   color: var(--local-color);
 }
 .join__title {
@@ -1080,15 +1087,14 @@ html {
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  height: 86px;
+}
+.mailing__title {
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--local-color);
-}
-.mailing__title {
-  margin-bottom: 20px;
 }
 .mailing__form {
   display: flex;
