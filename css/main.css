@@ -979,6 +979,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  justify-content: center;
 }
 .footer__info {
   width: 100%;
@@ -994,8 +995,9 @@ html {
 @media screen and (min-width: 768px) {
   .info-join {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    margin-left: 0;
+    margin-right: 0%;
+    align-items: baseline;
   }
 }
 
@@ -1084,12 +1086,18 @@ html {
 
 .mailing {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   width: 100%;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
 .mailing__title {
-  margin-bottom: 20px;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
