@@ -981,9 +981,22 @@ html {
   justify-content: space-between;
   justify-content: center;
 }
+@media screen and (min-width: 1200px) {
+  .footer__all {
+    width: auto;
+    align-items: baseline;
+    flex-grow: 1;
+  }
+}
 .footer__info {
   width: 100%;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer__info {
+    width: auto;
+    margin-right: 70px;
+  }
 }
 .footer__logo {
   margin-bottom: 20px;
@@ -995,9 +1008,15 @@ html {
 @media screen and (min-width: 768px) {
   .info-join {
     display: flex;
-    margin-left: 0;
-    margin-right: 0%;
+    width: 100%;
+    justify-content: space-between;
     align-items: baseline;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .info-join {
+    width: auto;
+    margin-right: 100px;
   }
 }
 
@@ -1043,6 +1062,12 @@ html {
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--local-color);
+}
+@media screen and (min-width: 1200px) {
+  .join {
+    width: auto;
+    margin-right: 93px;
+  }
 }
 .join__title {
   text-align: center;
@@ -1092,6 +1117,12 @@ html {
   justify-content: center;
   align-items: center;
 }
+@media screen and (min-width: 1200px) {
+  .mailing {
+    display: block;
+    width: auto;
+  }
+}
 .mailing__title {
   display: flex;
   width: 100%;
@@ -1104,11 +1135,23 @@ html {
   text-transform: uppercase;
   color: var(--local-color);
 }
+@media screen and (min-width: 1200px) {
+  .mailing__title {
+    width: auto;
+    margin-bottom: 20px;
+    justify-content: flex-start;
+  }
+}
 .mailing__form {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .mailing__form {
+    width: auto;
+  }
 }
 .mailing__icon {
   align-items: center;
@@ -1143,6 +1186,11 @@ html {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   background-color: #2f303a;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .mailing__input {
+    width: 360px;
+  }
 }
 .mailing__input:focus {
   border: 1px solid var(--second-header-color);

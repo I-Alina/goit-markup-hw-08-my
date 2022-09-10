@@ -6,6 +6,12 @@
   letter-spacing: 0.03em;
   color: var(--local-color);
 }
+@media screen and (min-width: 1200px) {
+  .join {
+    width: auto;
+    margin-right: 93px;
+  }
+}
 .join__title {
   text-align: center;
   margin-bottom: 20px;

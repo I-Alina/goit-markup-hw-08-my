@@ -5,32 +5,48 @@
   &__all {
     display: flex;
     flex-wrap: wrap;
+
     justify-content: space-between;
     justify-content: center;
+    @media screen and (min-width: 1200px) {
+      width: auto;
+      // align-items: stretch;
+      align-items: baseline;
+      flex-grow: 1;
+    }
   }
   &__info {
     width: 100%;
     text-align: center;
+    @media screen and (min-width: 1200px) {
+      width: auto;
+      // width: 231px;
+      // width: fit-content;
+      // flex-grow: 1;
+      margin-right: 70px;
+    }
   }
   &__logo {
     margin-bottom: 20px;
+    @media screen and (min-width: 1200px) {
+      // display: inline-block;
+    }
   }
   &__addres {
     margin-bottom: 8px;
   }
-  //   &__join {
-  //     // margin-right: 100px;
-  //   }
 }
 .info-join {
   @media screen and (min-width: 768px) {
     display: flex;
-    margin-left: 0;
-    margin-right: 0%;
-    // padding-left: 76px;
-    // padding-right: 86px;
-    // justify-content: space-between;
+    width: 100%;
+    justify-content: space-between;
     align-items: baseline;
+    @media screen and (min-width: 1200px) {
+      // width: fit-content;
+      width: auto;
+      margin-right: 100px;
+    }
   }
 }
 .footer--dark {
