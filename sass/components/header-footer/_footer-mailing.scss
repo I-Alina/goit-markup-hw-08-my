@@ -6,9 +6,9 @@
   justify-content: center;
   align-items: center;
   @media screen and (min-width: 1200px) {
-    display: block;
-    // flex-wrap: nowrap;
-    width: auto;
+    // display: block;
+    flex-wrap: wrap;
+    width: 570px;
   }
 
   &__title {
@@ -27,7 +27,8 @@
       // text-align: start;
       width: auto;
       margin-bottom: 20px;
-      justify-content: flex-start;
+
+      // justify-content: flex-start;
     }
   }
   &__form {
@@ -37,6 +38,8 @@
     justify-content: center;
     @media screen and (min-width: 1200px) {
       width: auto;
+      flex-wrap: nowrap;
+      align-items: baseline;
     }
   }
   &__icon {
@@ -74,7 +77,7 @@
   background-color: #2f303a;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @media screen and (min-width: 1200px) {
-    width: 360px;
+    width: 358px;
   }
   &:focus {
     border: 1px solid var(--second-header-color);

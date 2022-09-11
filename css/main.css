@@ -983,26 +983,40 @@ html {
 }
 @media screen and (min-width: 1200px) {
   .footer__all {
-    width: auto;
-    align-items: baseline;
-    flex-grow: 1;
+    flex-wrap: nowrap;
   }
 }
 .footer__info {
   width: 100%;
+  justify-content: center;
   text-align: center;
 }
 @media screen and (min-width: 1200px) {
   .footer__info {
     width: auto;
+    text-align: left;
     margin-right: 70px;
   }
 }
 .footer__logo {
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    align-items: left;
+  }
+}
 .footer__addres {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
   margin-bottom: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__addres {
+    width: auto;
+    justify-content: left;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1013,12 +1027,6 @@ html {
     align-items: baseline;
   }
 }
-@media screen and (min-width: 768px) and (min-width: 1200px) {
-  .info-join {
-    width: auto;
-    margin-right: 100px;
-  }
-}
 
 .footer--dark {
   background: #2f303a;
@@ -1027,8 +1035,14 @@ html {
 .contacts-f {
   margin-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .contacts-f {
+    width: 231px;
+    align-items: left;
+  }
+}
 .contacts-f .mail {
-  margin-bottom: 8px;
+  margin-bottom: 9px;
 }
 
 .contacts-f__tel {
@@ -1057,22 +1071,28 @@ html {
 
 .join {
   width: 100%;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  color: var(--local-color);
 }
 @media screen and (min-width: 1200px) {
   .join {
-    width: auto;
+    width: 206px;
     margin-right: 93px;
   }
 }
 .join__title {
   text-align: center;
   margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--local-color);
   text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .join__title {
+    width: auto;
+    text-align: left;
+  }
 }
 .join__list {
   display: flex;
@@ -1119,8 +1139,8 @@ html {
 }
 @media screen and (min-width: 1200px) {
   .mailing {
-    display: block;
-    width: auto;
+    flex-wrap: wrap;
+    width: 570px;
   }
 }
 .mailing__title {
@@ -1139,7 +1159,6 @@ html {
   .mailing__title {
     width: auto;
     margin-bottom: 20px;
-    justify-content: flex-start;
   }
 }
 .mailing__form {
@@ -1151,6 +1170,8 @@ html {
 @media screen and (min-width: 1200px) {
   .mailing__form {
     width: auto;
+    flex-wrap: nowrap;
+    align-items: baseline;
   }
 }
 .mailing__icon {
@@ -1189,7 +1210,7 @@ html {
 }
 @media screen and (min-width: 1200px) {
   .mailing__input {
-    width: 360px;
+    width: 358px;
   }
 }
 .mailing__input:focus {

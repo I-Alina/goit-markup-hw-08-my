@@ -1,18 +1,25 @@
 .join {
   width: 100%;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  color: var(--local-color);
+
   @media screen and (min-width: 1200px) {
-    width: auto;
+    width: 206px;
     margin-right: 93px;
   }
   &__title {
     text-align: center;
     margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--local-color);
     text-transform: uppercase;
+    @media screen and (min-width: 1200px) {
+      width: auto;
+      // display: flex;
+      // justify-content: left;
+      text-align: left;
+    }
   }
   &__list {
     display: flex;

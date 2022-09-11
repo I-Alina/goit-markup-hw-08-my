@@ -1,8 +1,11 @@
 .contacts-f {
   margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    width: 231px;
+    align-items: left;
+  }
   .mail {
-    //   margin-bottom: 9px;
-    margin-bottom: 8px;
+    margin-bottom: 9px;
   }
 }
 .contacts-f__tel {

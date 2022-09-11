@@ -9,31 +9,34 @@
     justify-content: space-between;
     justify-content: center;
     @media screen and (min-width: 1200px) {
-      width: auto;
-      // align-items: stretch;
-      align-items: baseline;
-      flex-grow: 1;
+      flex-wrap: nowrap;
     }
   }
   &__info {
     width: 100%;
+    justify-content: center;
     text-align: center;
     @media screen and (min-width: 1200px) {
       width: auto;
-      // width: 231px;
-      // width: fit-content;
-      // flex-grow: 1;
+      text-align: left;
       margin-right: 70px;
     }
   }
   &__logo {
     margin-bottom: 20px;
     @media screen and (min-width: 1200px) {
-      // display: inline-block;
+      align-items: left;
     }
   }
   &__addres {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
     margin-bottom: 8px;
+    @media screen and (min-width: 1200px) {
+      width: auto;
+      justify-content: left;
+    }
   }
 }
 .info-join {
@@ -42,11 +45,6 @@
     width: 100%;
     justify-content: space-between;
     align-items: baseline;
-    @media screen and (min-width: 1200px) {
-      // width: fit-content;
-      width: auto;
-      margin-right: 100px;
-    }
   }
 }
 .footer--dark {
