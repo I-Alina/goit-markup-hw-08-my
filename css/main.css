@@ -1023,7 +1023,6 @@ html {
   .info-join {
     display: flex;
     width: 100%;
-    justify-content: space-between;
     align-items: baseline;
   }
 }
@@ -1039,6 +1038,7 @@ html {
   .contacts-f {
     width: 231px;
     align-items: left;
+    margin-bottom: 0;
   }
 }
 .contacts-f .mail {
@@ -1139,8 +1139,9 @@ html {
 }
 @media screen and (min-width: 1200px) {
   .mailing {
-    flex-wrap: wrap;
+    display: block;
     width: 570px;
+    text-align: left;
   }
 }
 .mailing__title {
@@ -1157,7 +1158,9 @@ html {
 }
 @media screen and (min-width: 1200px) {
   .mailing__title {
+    flex-wrap: nowrap;
     width: auto;
+    justify-content: left;
     margin-bottom: 20px;
   }
 }
@@ -1171,7 +1174,8 @@ html {
   .mailing__form {
     width: auto;
     flex-wrap: nowrap;
-    align-items: baseline;
+    gap: 0;
+    justify-content: left;
   }
 }
 .mailing__icon {
