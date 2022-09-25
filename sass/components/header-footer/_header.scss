@@ -49,6 +49,9 @@
     letter-spacing: 0.02em;
     color: var(--main-title-color);
   }
+  &__link--current {
+    color: var(--second-header-color);
+  }
   &__item:not(:last-child) {
     margin-bottom: 32px;
   }
@@ -75,6 +78,7 @@
 }
 .mob-soc {
   display: flex;
+  flex-wrap: wrap;
 
   &__item:not(:last-child) {
     padding-right: 10px;

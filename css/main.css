@@ -9,7 +9,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  width: 100%;
 }
 
 p,
@@ -407,6 +406,9 @@ html {
   letter-spacing: 0.02em;
   color: var(--main-title-color);
 }
+.mob-menu__link--current {
+  color: var(--second-header-color);
+}
 .mob-menu__item:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -435,6 +437,7 @@ html {
 
 .mob-soc {
   display: flex;
+  flex-wrap: wrap;
 }
 .mob-soc__item:not(:last-child) {
   padding-right: 10px;
