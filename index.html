@@ -144,28 +144,31 @@
         </div>
       </header>
       <section class="hero hero__overlay">
-          <div class="container">
+        <div class="container">
           <h1 class="hero__title">
-            Ефективні рішення для <br/> вашого бізнесу
+            Ефективні рішення для <br />
+            вашого бізнесу
           </h1>
           <button type="button" class="hero__btn" data-modal-open>
             Замовити послугу
           </button>
-          </div>
-        </section>
+        </div>
+      </section>
       <section class="section">
         <div class="container features">
           <ul class="features__list list">
             <li class="features__item features__icon-antenna">
               <h3 class="features__title">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="features__text">
-                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
               </p>
             </li>
             <li class="features__item features__icon-clock">
               <h3 class="features__title">ПУНКТУАЛЬНІСТЬ</h3>
               <p class="features__text">
-                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
               </p>
             </li>
             <li class="features__item features__icon-laptop">
@@ -177,10 +180,12 @@
             <li class="features__item features__icon-astronaut">
               <h3 class="features__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="features__text">
-                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
               </p>
             </li>
           </ul>
+        </div>
       </section>
       <section class="works">
         <div class="container">
@@ -224,11 +229,58 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__item">
-              <img
-                src="./images/img-igor.jpg"
-                alt="Мужчина в вишневой рубашке"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img-igor-desktop.webp    1x,
+                    ./images/img-igor-desktop@2x.webp 2x
+                  "
+                  media="(min-width:1200px"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/img-igor-desktop.jpeg    1x,
+                    ./images/img-igor-desktop@2x.jpeg 2x
+                  "
+                  media="(min-width:1200px"
+                />
+                <source
+                  srcset="
+                    ./images/img-igor-tablet.webp    1x,
+                    ./images/img-igor-tablet@2x.webp 2x
+                  "
+                  media="(min-width:768px"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/img-igor-tablet.jpeg    1x,
+                    ./images/img-igor-tablet@2x.jpeg 2x
+                  "
+                  media="(min-width:768px"
+                />
+                <source
+                  srcset="
+                    ./images/img-igor-mobile.webp    1x,
+                    ./images/img-igor-mobile@2x.webp 2x
+                  "
+                  media="(max-width:767px"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/img-igor-mobile.jpeg    1x,
+                    ./images/img-igor-mobile@2x.jpeg 2x
+                  "
+                  media="(max-width:767px"
+                />
+                <img
+                  src="./images/img-igor.jpg"
+                  alt="Мужчина в вишневой рубашке"
+                />
+              </picture>
+
               <div class="team__container">
                 <p class="team__subtitle">Ігор Дем'яненко</p>
                 <p lang="en" class="team__text">Product Designer</p>
@@ -281,11 +333,54 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/img-olga.jpg"
-                alt="Блондинка в очках"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img-olga-desktop.webp    1x,
+                    ./images/img-olga-desktop@2x.webp 2x
+                  "
+                  media="(min-width:1200px"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/img-olga-desktop.jpeg    1x,
+                    ./images/img-olga-desktop@2x.jpeg 2x
+                  "
+                  media="(min-width:1200px"
+                />
+                <source
+                  srcset="
+                    ./images/img-olga-tablet.webp    1x,
+                    ./images/img-olga-tablet@2x.webp 2x
+                  "
+                  media="(min-width:768px"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/img-olga-tablet.jpeg    1x,
+                    ./images/img-olga-tablet@2x.jpeg 2x
+                  "
+                  media="(min-width:768px"
+                />
+                <source
+                  srcset="
+                    ./images/img-olga-mobile.webp    1x,
+                    ./images/img-olga-mobile@2x.webp 2x
+                  "
+                  media="(max-width:767px"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/img-olga-mobile.jpeg    1x,
+                    ./images/img-olga-mobile@2x.jpeg 2x
+                  "
+                  media="(max-width:767px"
+                />
+                <img src="./images/img-olga.jpg" alt="Блондинка в очках" />
+              </picture>
               <div class="team__container">
                 <p class="team__subtitle">Ольга Рєпіна</p>
                 <p lang="en" class="team__text">Frontend Developer</p>
@@ -338,11 +433,57 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/img-nicolay.jpg"
-                alt="Мужчина в белой рубашке"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img-nicolay-desktop.webp    1x,
+                    ./images/img-nicolay-desktop@2x.webp 2x
+                  "
+                  media="(min-width:1200px"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/img-nicolay-desktop.jpeg    1x,
+                    ./images/img-nicolay-desktop@2x.jpeg 2x
+                  "
+                  media="(min-width:1200px"
+                />
+                <source
+                  srcset="
+                    ./images/img-nicolay-tablet.webp    1x,
+                    ./images/img-nicolay-tablet@2x.webp 2x
+                  "
+                  media="(min-width:768px"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/img-nicolay-tablet.jpeg    1x,
+                    ./images/img-nicolay-tablet@2x.jpeg 2x
+                  "
+                  media="(min-width:768px"
+                />
+                <source
+                  srcset="
+                    ./images/img-nicolay-mobile.webp    1x,
+                    ./images/img-nicolay-mobile@2x.webp 2x
+                  "
+                  media="(max-width:767px"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/img-nicolay-mobile.jpeg    1x,
+                    ./images/img-nicolay-mobile@2x.jpeg 2x
+                  "
+                  media="(max-width:767px"
+                />
+                <img
+                  src="./images/img-nicolay.jpg"
+                  alt="Мужчина в белой рубашке"
+                />
+              </picture>
               <div class="team__container">
                 <p class="team__subtitle">Микола Тарасов</p>
                 <p lang="en" class="team__text">Marketing</p>
@@ -395,11 +536,57 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/img-mihail.jpg"
-                alt="Мужчина в черной футболке"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img-mihail-desktop.webp    1x,
+                    ./images/img-mihail-desktop@2x.webp 2x
+                  "
+                  media="(min-width:1200px"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/img-mihail-desktop.jpeg    1x,
+                    ./images/img-mihail-desktop@2x.jpeg 2x
+                  "
+                  media="(min-width:1200px"
+                />
+                <source
+                  srcset="
+                    ./images/img-mihail-tablet.webp    1x,
+                    ./images/img-mihail-tablet@2x.webp 2x
+                  "
+                  media="(min-width:768px"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/img-mihail-tablet.jpeg    1x,
+                    ./images/img-mihail-tablet@2x.jpeg 2x
+                  "
+                  media="(min-width:768px"
+                />
+                <source
+                  srcset="
+                    ./images/img-mihail-mobile.webp    1x,
+                    ./images/img-mihail-mobile@2x.webp 2x
+                  "
+                  media="(max-width:767px"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/img-mihail-mobile.jpeg    1x,
+                    ./images/img-mihail-mobile@2x.jpeg 2x
+                  "
+                  media="(max-width:767px"
+                />
+                <img
+                  src="./images/img-mihail.jpg"
+                  alt="Мужчина в черной футболке"
+                />
+              </picture>
               <div class="team__container">
                 <p class="team__subtitle">Михайло Єрмаков</p>
                 <p lang="en" class="team__text">UI Designer</p>
@@ -528,22 +715,29 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
+      -->
     </main>
     <footer class="footer footer--dark">
       <div class="container footer__all">
         <div class="info-join">
           <div class="footer__info">
-            <a href="/" class="logo footer__logo">Web<span class="logo__span--color-white">Studio</span>
+            <a href="/" class="logo footer__logo"
+              >Web<span class="logo__span--color-white">Studio</span>
             </a>
             <address class="address footer__addres">
-            м. Київ, пр-т Лесі Українки, 26</address>
+              м. Київ, пр-т Лесі Українки, 26
+            </address>
             <ul class="contacts-f list">
               <li class="contacts-f__item mail">
-                <a class="contacts-f__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a class="contacts-f__mail" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
               </li>
               <li class="contacts-f__item">
-                <a class="contacts-f__tel" href="tel:+380961111111">+38 096 111 11 11</a>
+                <a class="contacts-f__tel" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
               </li>
             </ul>
           </div>
@@ -553,8 +747,11 @@
               <li class="join__item">
                 <a href="" class="join__link link">
                   <svg class="join__icon">
-                    <use href="./images/icons.svg#icon-instagram" width="20"
-                    height="20"></use>
+                    <use
+                      href="./images/icons.svg#icon-instagram"
+                      width="20"
+                      height="20"
+                    ></use>
                   </svg>
                 </a>
               </li>
@@ -562,9 +759,10 @@
                 <a href="" class="join__link link">
                   <svg class="join__icon">
                     <use
-                    href="./images/icons.svg#icon-twitter"
-                    width="20"
-                    height="20"></use>
+                      href="./images/icons.svg#icon-twitter"
+                      width="20"
+                      height="20"
+                    ></use>
                   </svg>
                 </a>
               </li>
@@ -572,9 +770,10 @@
                 <a href="" class="join__link link">
                   <svg class="join__icon">
                     <use
-                    href="./images/icons.svg#icon-facebook"
-                    width="20"
-                    height="20"></use>
+                      href="./images/icons.svg#icon-facebook"
+                      width="20"
+                      height="20"
+                    ></use>
                   </svg>
                 </a>
               </li>
@@ -582,27 +781,34 @@
                 <a href="" class="join__link link">
                   <svg class="join__icon">
                     <use
-                    href="./images/icons.svg#icon-linkedin"
-                    width="20"
-                    height="20"></use>
+                      href="./images/icons.svg#icon-linkedin"
+                      width="20"
+                      height="20"
+                    ></use>
                   </svg>
                 </a>
               </li>
             </ul>
           </div>
+        </div>
+        <div class="mailing">
+          <p class="mailing__title">Підпишіться на розсилку</p>
+          <form class="mailing__form">
+            <input
+              type="email"
+              name="email"
+              placeholder="E-mail"
+              class="mailing__input"
+            />
+            <button type="submit" class="btn mailing-btn">
+              Підписатися
+              <svg class="mailing__icon" width="24" height="24">
+                <use href="./images/icons.svg#footer-send-icon"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
-      <div class="mailing">
-        <p class="mailing__title">Підпишіться на розсилку</p>
-        <form class="mailing__form">
-          <input type="email" name="email" placeholder="E-mail" class="mailing__input"/>
-          <button type="submit" class="btn mailing-btn">Підписатися
-            <svg class="mailing__icon" width="24" height="24">
-              <use href="./images/icons.svg#footer-send-icon"></use>
-            </svg>
-          </button>
-        </form>
-      </div>
-    </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -675,17 +881,21 @@
             ></textarea>
           </div>
           <label for="privacy" class="check-text">
-                <input type="checkbox" name="pivacy" id="privacy"  class="input-check visually-hidden" />
-                  <span class="check-check">
-                      <svg class="check-icon" width="11" height="8">
-                          <use href="./images/icons.svg#icon-modal-check">
-                          </use>
-                        </svg>
-                    </span>Погоджуюся з розсилкою та приймаю &nbsp;<a href="">Умови договору</a>
-            </label>
-          <button type="submit" class="modal-btn">Відправити
-          </button>
-          </div>
+            <input
+              type="checkbox"
+              name="pivacy"
+              id="privacy"
+              class="input-check visually-hidden"
+            />
+            <span class="check-check">
+              <svg class="check-icon" width="11" height="8">
+                <use href="./images/icons.svg#icon-modal-check"></use>
+              </svg> </span
+            >Погоджуюся з розсилкою та приймаю &nbsp;<a href=""
+              >Умови договору</a
+            >
+          </label>
+          <button type="submit" class="modal-btn">Відправити</button>
         </form>
       </div>
     </div>
