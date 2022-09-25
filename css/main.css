@@ -296,7 +296,7 @@ html {
   letter-spacing: 0.03em;
   margin-bottom: 30px;
   color: var(--header-color);
-  flex-shrink: 0;
+  white-space: nowrap;
 }
 @media screen and (min-width: 1200px) {
   .check-text {
