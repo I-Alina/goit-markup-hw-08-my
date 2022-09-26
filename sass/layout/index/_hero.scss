@@ -2,6 +2,12 @@
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
+  justify-items: center;
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
   &__title {
     display: inline-block;
     font-weight: 900;
@@ -9,6 +15,10 @@
     line-height: 1.62;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 1.36;
+    }
   }
 }
 .hero__btn {
@@ -36,7 +46,7 @@
 .hero__overlay {
   display: block;
   max-width: 1600px;
-  height: 600px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-color: #c4c4c4;
@@ -50,31 +60,33 @@
   screen and (min-resolution: 192dpi) and (max-width: 767px),
   screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .hero__overlay {
-    background-image: url(./../../../images/hero-img-mobile@2x.jpeg);
+    background-image: url(../images/hero-img-mobile@2x.jpeg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero__overlay {
-    background-image: url(./../../../images/hero-img-tablet.jpeg);
+    background-image: url(../images/hero-img-tablet.jpeg);
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
   screen and (min-resolution: 192dpi) and (min-width: 768px),
   screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero__overlay {
-    background-image: url(./../../../images/hero-img-tablet@2x.jpeg);
+    background-image: url(../images/hero-img-tablet@2x.jpeg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero__overlay {
-    background-image: url(./../../../images/hero-img-desktop.jpeg);
+    background-image: url(../images/hero-img-desktop.jpeg);
+    height: 600px;
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
   screen and (min-resolution: 192dpi) and (min-width: 1200px),
   screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero__overlay {
-    background-image: url(./../../../images/hero-img-desktop@2x.jpeg);
+    background-image: url(../images/hero-img-desktop@2x.jpeg);
+    height: 600px;
   }
 }

@@ -35,6 +35,9 @@
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 40px;
+  @media screen and (min-width: 481px) {
+    display: none;
+  }
   .container {
     display: flex;
     flex-direction: column;
@@ -72,7 +75,16 @@
     letter-spacing: 0.02em;
     color: var(--header-color);
   }
+  @media screen and (max-width: 479px) {
+    &__tel-link {
+      font-size: 25px;
+    }
+    &__mail-link {
+      font-size: 18px;
+    }
+  }
 }
+
 .mob-contacts__item + .mob-contacts__item {
   margin-top: 32px;
 }
@@ -96,6 +108,9 @@
   line-height: calc(22 / 18);
   letter-spacing: 0.02em;
   color: var(--second-header-color);
+  @media screen and (max-width: 479px) {
+    font-size: 11px;
+  }
 }
 .menu-close {
   display: block;
