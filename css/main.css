@@ -148,8 +148,8 @@ html {
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 530px;
-    min-height: 580px;
+    width: 528px;
+    min-height: 581px;
   }
 }
 .backdrop.is-hidden .modal {
@@ -288,8 +288,7 @@ html {
 
 .check-text {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.1666666667;
@@ -300,7 +299,15 @@ html {
 }
 @media screen and (min-width: 1200px) {
   .check-text {
+    align-items: center;
+    justify-content: center;
     line-height: 1.7142857143;
+  }
+}
+@media screen and (max-width: 479px) {
+  .check-text {
+    width: 100%;
+    font-size: 2.91vw;
   }
 }
 .check-text a {
@@ -392,7 +399,7 @@ html {
   padding-bottom: 48px;
   padding-left: 40px;
 }
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 768px) {
   .mob-menu {
     display: none;
   }
@@ -684,6 +691,11 @@ html {
   .hero__title {
     font-size: 44px;
     line-height: 1.36;
+  }
+}
+@media screen and (max-width: 479px) {
+  .hero__title {
+    font-size: 20px;
   }
 }
 
@@ -1051,6 +1063,7 @@ html {
 @media screen and (min-width: 1200px) {
   .footer__all {
     flex-wrap: nowrap;
+    align-items: baseline;
   }
 }
 .footer__info {
@@ -1393,7 +1406,7 @@ html {
   font-family: inherit;
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.55;
+  line-height: 1.56;
   height: 100%;
   padding: 63px 24px;
   color: var(--local-color);
