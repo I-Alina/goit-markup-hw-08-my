@@ -165,9 +165,6 @@
 .check-text {
   display: flex;
   align-items: flex-start;
-  // width: 370px;
-  // align-items: center;
-  // justify-content: center;
   font-weight: 400;
   font-size: 14px;
   line-height: calc(14 / 12);
@@ -182,7 +179,8 @@
   }
   @media screen and (max-width: 479px) {
     width: 100%;
-    font-size: 2.91vw;
+    font-size: 7px;
+    align-items: baseline;
   }
   a {
     color: var(--second-header-color);

@@ -307,7 +307,8 @@ html {
 @media screen and (max-width: 479px) {
   .check-text {
     width: 100%;
-    font-size: 2.91vw;
+    font-size: 7px;
+    align-items: baseline;
   }
 }
 .check-text a {
